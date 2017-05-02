@@ -1,0 +1,16 @@
+export const NEXTSONG ='NEXTSONG';
+export const PREVSONG ='PREVSONG';
+export const SENDAUDIO ='SENDAUDIO';
+export const SENDMUSIC ='SENDMUSIC';
+export const LOOPPLAYBACK = 'LOOPPLAYBACK';
+export const PLAY ='PLAY';
+export const PAUSE = 'PAUSE';
+export const CLOSELISTSTATE = 'CLOSELISTSTATE';
+export const OPENLISTSTATE = 'OPENLISTSTATE';
+export const SELECTMUSIC = 'SELECTMUSIC';
+export const DELMUSIC = 'DELMUSIC';
+export const SHOWLOADING = 'SHOWLOADING';
+export const HIDLOADING  = 'HIDLOADING';
+export const SHOWPLAYINFO ='SHOWPLAYINFO';
+export const HIDPLAYINFO = 'HIDPLAYINFO';
+export const SETCURRENTTIME = 'SETCURRENTTIME';
