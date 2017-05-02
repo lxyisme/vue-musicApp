@@ -1,7 +1,12 @@
 ## 基于vue2.0制作的音乐播放器（基于qq音乐api）
 
+前段时间逛论坛，无意间看到了一个大神用vue写的音乐播放器，于是就手热自己写了一个
+
 > 关于我，欢迎关注
   作者：潇禹
+
+### 预览图
+![Vue音乐播放器](https://github.com/921227965/vue-musicApp/blob/master/preview/preview.gif?raw=true)
 
 ### 使用依赖
 <pre>
