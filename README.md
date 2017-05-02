@@ -5,6 +5,14 @@
 > 关于我，欢迎关注
   作者：潇禹
 
+## 源代码
+源代码地址：[GitHub](https://github.com/921227965/vue-musicApp)  
+欢迎大家star和follow
+
+
+### 在线预览
+在线预览地址： [Vue音乐播放器](https://921227965.github.io)
+
 ### 预览图
 ![Vue音乐播放器](https://github.com/921227965/vue-musicApp/blob/master/preview/preview.gif?raw=true)
 
