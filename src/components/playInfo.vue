@@ -135,8 +135,7 @@
         left:0;
         height:100vh;
         width:100%;
-        background: url("../assets/img/bg.jpg") no-repeat center;
-        background-size: cover;
+        background: #e1e2fe;
         z-index: 3;
     }
     .playInfoTitle{
@@ -146,13 +145,13 @@
     .playInfoTitle p{
         line-height: 6vh;
         font-size: 1.4rem;
-        color: #ccc;
+        color: #999;
     }
     .playInfoTitle button{
         margin-right: 1rem;
         margin-left: .5rem;
         font-size: 2rem;
-        color: #ccc;
+        color: #999;
     }
     .lycBox{
         height:70vh;
