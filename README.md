@@ -30,6 +30,7 @@
 ├── README.md           
 ├── config             // 项目不同环境的配置
 ├── index.html         // 项目入口文件
+├── dist               // 项目build目录
 ├── package.json       // 项目配置文件
 ├── src                // 生产目录
 │   ├── assets         // css js 和图片资源
