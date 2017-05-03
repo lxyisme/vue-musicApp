@@ -16,6 +16,20 @@
 ### 预览图
 ![Vue音乐播放器](https://github.com/921227965/vue-musicApp/blob/master/preview/preview.gif?raw=true)
 
+## 使用 Build Setup
+
+``` bash
+# install dependencies
+npm install
+
+# serve with hot reload at localhost:8080
+npm run dev
+
+# build for production with minification
+npm run build
+
+```
+
 ### 使用依赖
 <pre>
    animate.css
