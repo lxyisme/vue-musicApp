@@ -10,7 +10,9 @@ import routes from './router.config';//导入路由配置文件
 const router =new VueRouter(routes);//创建路由实列
 import './assets/iconfont/iconfont.css';//图形字体库
 import store from './store';//全局挂载状态管理
-
+import museUi from 'muse-ui';
+import 'muse-ui/dist/muse-ui.css'
+Vue.use(museUi);
 import loading from './components/loading';
 Vue.use(loading);
 Vue.http.interceptors.push((request, next) => {
