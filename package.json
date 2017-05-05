@@ -1,8 +1,8 @@
 {
-  "name": "vueapp",
+  "name": "vue-musicApp",
   "description": "A Vue.js project",
   "version": "1.0.0",
-  "author": "921227965 <921227965@qq.com>",
+  "author": "lxyisme",
   "private": true,
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
