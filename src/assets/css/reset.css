@@ -1,5 +1,9 @@
 @charset "utf-8";
 html,body{height: 100%;font-size: 12px}
+html,body{
+    max-width: 633px;
+    margin: 0 auto;
+}
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,textarea,button,img{padding: 0; margin: 0;}
 body{background:#fff;font-family:"微软雅黑";}
 body,th,td,input,select,textarea,button{font-size:12px;line-height:1 ;} /* 重置页面文字属性 */

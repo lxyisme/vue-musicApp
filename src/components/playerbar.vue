@@ -49,9 +49,13 @@
         height:16vw;
         width: 16vw;
         border: 2px #ccc solid;
+        max-width: 90px;
+        max-height: 90px;
     }
     .playBar_l img{
         width: 16vw;
+        max-width: 86px;
+        max-height: 86px;
     }
     .playBar_m{
         flex: 1;

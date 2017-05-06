@@ -14,6 +14,7 @@
         margin: auto;
         z-index: 3;
         width: 100%;
+        max-width: 633px;
         height: 100vh;
         background: #e1e2fe;
     }

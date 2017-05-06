@@ -16,6 +16,7 @@
                  </ul>
             </transition>
         </div>
+        <mu-slider v-model="value1" class="demo-slider"/>
         <div class="playbackProgress">
             <span>{{currentTime | date}}  </span>
             <div class="progress">
@@ -52,6 +53,7 @@
                 lyric:'',
                 lyricPlace:35+"vh",
                 time:0,
+                value1:0
             }
         },
         mounted(){
@@ -133,9 +135,13 @@
         position: absolute;
         top: 0;
         left:0;
+        bottom:0;
+        right:0;
         height:100vh;
         width:100%;
+        max-width: 633px;
         background: #e1e2fe;
+        margin: 0 auto;
         z-index: 3;
     }
     .playInfoTitle{
