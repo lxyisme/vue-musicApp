@@ -16,13 +16,13 @@
                  </ul>
             </transition>
         </div>
-        <mu-slider v-model="value1" class="demo-slider"/>
         <div class="playbackProgress">
             <span>{{currentTime | date}}  </span>
-            <div class="progress">
-                <p :style="{width:progress+'%'}"></p>
-                <button :style="{left:progress+'%'}"></button>
-            </div>
+            <mu-slider
+                    v-model="moveValue"
+                    class="demo-slider progress"
+                    @change="moveSetTime"
+            />
             <span>{{duration | date}}</span>
         </div>
         <div class="playBtnBox">
@@ -53,7 +53,7 @@
                 lyric:'',
                 lyricPlace:35+"vh",
                 time:0,
-                value1:0
+                moveValue:0
             }
         },
         mounted(){
@@ -67,21 +67,29 @@
                 let scrH =0;
                 for (let i=0;i<nowLyc.length;i++){
                     scrH+=nowLyc[i].offsetHeight;
+                    console.log(i)
                 }
                 jquery('.lycBox').scrollTop(scrH);
-            },10);
+            },100);
         },
         methods:{
-//            moveSetTime(ev){
-//                if (ev.target.tagName =='BUTTON'){
-//                    let offsetLeft =ev.clientX -ev.target.offsetLeft;
-//                    document.ontouchmove=function (evt) {
-//                        ev.target.style.left = evt.clientX-offsetLeft+'px'
-//                        console.log(22)
-//                    }
-//                }
-//                console.log((ev.target.offsetLeft/ev.target.parentNode.offsetWidth).toFixed(4)*100);
-//            },
+            moveSetTime(){
+                if (this.duration>0){
+                    setTimeout( () =>{
+                        this.setCurrentTime(this.moveValue*this.duration/100);
+                    },0);
+                    let scroll = setTimeout(()=>{
+                        clearTimeout(scroll);
+                        let nowLyc= document.getElementsByClassName('nowLyc');
+                        let scrH =0;
+                        for (let i=0;i<nowLyc.length;i++){
+                            scrH+=nowLyc[i].offsetHeight;
+                        }
+                        console.log(scrH);
+                        jquery('.lycBox').scrollTop(scrH);
+                    },10)
+                }
+            },
             getLyc(){
                 if(this.nowSong.songid !== -1){
                     this.$http.jsonp("https://api.darlin.me/music/lyric/"+this.nowSong.songid+"/?").then(res =>{
@@ -97,13 +105,11 @@
                 'closeListState',
                 'play','nextMusic',
                 'prevMusic',
-                'setCurrentTime'
+                'setCurrentTime',
+                'movePlay'
             ])
         },
         computed:{
-            progress(){
-              return (this.currentTime/this.duration).toFixed(4)*100
-            },
             ...mapGetters(['nowSong','currentTime','playBtnClass','duration'])
         },
         components:{
@@ -126,6 +132,7 @@
                     }
                     jquery('.lycBox').animate({scrollTop:scrH});
                 }
+                this.moveValue=(this.currentTime/this.duration).toFixed(4)*100
             }
         }
     }
@@ -188,6 +195,7 @@
         height:.5vh;
         margin: 0 1rem;
         position: relative;
+        color: #00e09e;
     }
     .progress p{
         position: absolute;
