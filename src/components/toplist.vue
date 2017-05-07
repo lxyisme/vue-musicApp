@@ -141,10 +141,14 @@
     .topListInfo{
         display: flex;
         margin: 0;
+        align-content: center;
+        height: 8vh;
     }
     .topListInfo h1{
         height:8vh;
         line-height: 8vh;
+        padding: 0;
+        margin: 0;
         font-size: 1.6rem;
         width:14%;
         color: #fff;
@@ -171,6 +175,7 @@
     }
     .topListInfo p span{
         font-size: 1.2rem;
+
         color: #eee;
     }
 </style>

@@ -40,6 +40,7 @@
         display: flex;
         align-items: center;
         height: 14vh;
+        overflow: hidden;
         padding-left: 1.5rem;
     }
     .playBar_l{
@@ -50,7 +51,7 @@
         max-height: 90px;
     }
     .playBar_l img{
-        width: 16vw;
+        width: 15vw;
         max-width: 86px;
         max-height: 86px;
     }

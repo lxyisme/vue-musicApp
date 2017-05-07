@@ -27,8 +27,8 @@
 </script>
 <style>
     .musicList_box{
-        position: absolute;
-        height:35vh;
+        position: fixed;
+        height:36vh;
         bottom: 0;
         z-index: 2;
         right:0;
@@ -43,8 +43,8 @@
     .musicList_box h1{
         text-align: center;
         color: #000;
-        height:5vh;
-        line-height: 5vh;
+        height:3vh;
+        line-height: 3vh;
         font-size: 1.2rem;
     }
     .musicList{
