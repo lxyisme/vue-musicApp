@@ -1,0 +1,54 @@
+我整理了一下本应用用到的QQ音乐api供大家参考（api的各个参数我没有明确列出来，探索才是最刺激的 哈哈哈）
+
+搜索歌曲：(请求方式jsonp)
+    url:https://c.y.qq.com/soso/fcgi-bin/search_for_qq_cp?format=jsonp&n=20&w="+关键字+""
+    jsonp:jsonpCallback
+
+排行榜：(请求方式jsonp)
+    url:https://c.y.qq.com/v8/fcg-bin/fcg_myqq_toplist.fcg?
+    format:jsonp
+    g_tk:5381
+    uin=0
+    format:jsonp
+    inCharset:utf-8
+    outCharset:utf-8
+    notice:0
+    platform:h5
+    needNewCode:1
+    _:1492853417073
+    参数可以适当删节
+    jsonp:jsonpCallback
+
+排行榜详情页：(请求方式jsonp)
+    url:https://c.y.qq.com/v8/fcg-bin/fcg_v8_toplist_cp.fcg?
+    g_tk=5381
+    uin=0
+    format=json
+    inCharset=utf-8
+    outCharset=utf-8&notice=
+    platform=h5
+    needNewCode=1
+    tpl=3
+    page=detail
+    type=top
+    topid：在排行榜获取的ID
+    _=1492910996732
+    参数可以适当删节
+    jsonp:jsonpCallback
+
+首页轮播图：(请求方式jsonp)
+   url:https://c.y.qq.com/musichall/fcgi-bin/fcg_yqqhomepagerecommend.fcg?g_tk=5381&uin=0&format=jsonp&inCharset=utf-8&outCharset=utf-8&notice=0&platform=h5&needNewCode=1&_=1492177982521
+
+歌词：(请求方式jsonp)
+   url：https://api.darlin.me/music/lyric/"+获取的音乐id+"/?
+   这里要注意的是返回来的是base64,需要转码才能使用（src/assets/js里有封装的转码函数可以直接拿来用）
+   转码后是歌词格式需要转成数组才可以使用（一样在src/assets/js里有封装的转格式函数可以直接拿来用）
+
+歌曲地址：(id为获取到的音乐id)
+   http://ws.stream.qqmusic.qq.com/"+id+".m4a?fromtag=46
+
+
+
+
+不要问我为什么没有把每个参数列详细，对！我就是懒
+
