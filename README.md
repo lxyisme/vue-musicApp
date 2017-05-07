@@ -72,8 +72,5 @@ npm run build
    音乐进度的拖拽
 </pre>
 ---
-### 待实现功能：
-<pre>
-   侧边栏
-   登陆，注册
-</pre>   
+#### 欢迎技术交流，xiaoyuliu.webdeveloper@gmail.com
+#### 微信：13216210763（欢迎“骚扰”）
