@@ -27,9 +27,6 @@
         },
         methods:mapActions(['play','nextMusic','openListState','closeListState','showPlayInfo']),
         computed:mapGetters(['playBtnClass','currentTime','duration','songImg','songInfo']),
-        watch:{
-
-        },
         components:{
             'v-musiclist':MusicList
         }
