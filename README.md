@@ -40,7 +40,7 @@ npm run build
 </pre>
 ### 目录结构
 <pre>
-.
+
 ├── README.md           
 ├── config             // 项目不同环境的配置
 ├── index.html         // 项目入口文件
