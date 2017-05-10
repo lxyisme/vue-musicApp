@@ -1,5 +1,5 @@
 我整理了一下本应用用到的QQ音乐api供大家参考（api的各个参数我没有明确列出来，探索才是最刺激的 哈哈哈）
-
+ 
 搜索歌曲：(请求方式jsonp)
     url:https://c.y.qq.com/soso/fcgi-bin/search_for_qq_cp?format=jsonp&n=20&w="+关键字+""
     jsonp:jsonpCallback
