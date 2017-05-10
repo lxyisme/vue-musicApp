@@ -3,7 +3,7 @@
 搜索歌曲：(请求方式jsonp)
     url:https://c.y.qq.com/soso/fcgi-bin/search_for_qq_cp?format=jsonp&n=20&w="+关键字+""
     jsonp:jsonpCallback
- 
+  
 排行榜：(请求方式jsonp)
     url:https://c.y.qq.com/v8/fcg-bin/fcg_myqq_toplist.fcg?
     format:jsonp
