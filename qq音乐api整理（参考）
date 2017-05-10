@@ -26,7 +26,7 @@
     format=json
     inCharset=utf-8
     outCharset=utf-8&notice=
-    platform=h5
+    platform=h5 
     needNewCode=1
     tpl=3
     page=detail
