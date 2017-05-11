@@ -8,7 +8,7 @@
     url:https://c.y.qq.com/v8/fcg-bin/fcg_myqq_toplist.fcg?
     format:jsonp
     g_tk:5381
-    uin=0
+    uin=0 
     format:jsonp
     inCharset:utf-8
     outCharset:utf-8
