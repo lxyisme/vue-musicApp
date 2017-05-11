@@ -46,7 +46,7 @@
 
 歌曲地址：(id为获取到的音乐id)
    http://ws.stream.qqmusic.qq.com/"+id+".m4a?fromtag=46
-
+ 
 
 不要问我为什么没有把每个参数列详细，对！我就是懒！ 
 
