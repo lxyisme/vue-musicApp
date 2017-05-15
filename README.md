@@ -48,31 +48,31 @@ npm run build
 ├── package.json       // 项目配置文件
 ├── src                // 生产目录
 │   ├── assets         // css js 和图片资源
-│   │		├── css
-│   │		├── iconfont
-│   │		├── img
-│   │		└── js
+│   │	├── css
+│   │	├── iconfont
+│   │	├── img
+│   │	└── js
 │   ├── components     // 各种组件
-│   │		├── loading
-│   │		├── carousel.vue
-│   │		├── header.vue
-│   │		├── home.vue
-│   │		├── musicList.vue
-│   │		├── navBar.vue
-│   │		├── playInfo.vue
-│   │		├── playBar.vue
-│   │		├── raking.vue
-│   │		├── search.vue
-│   │		└── toplist.vue
+│   │	├── loading
+│   │	├── carousel.vue
+│   │	├── header.vue
+│   │	├── home.vue
+│   │	├── musicList.vue
+│   │	├── navBar.vue
+│   │	├── playInfo.vue
+│   │	├── playBar.vue
+│   │	├── raking.vue
+│   │	├── search.vue
+│   │	└── toplist.vue
 │   ├── store          // vuex状态管理器
-│   │		├── action.js
-│   │		├── getters.js
-│   │		├── index.js
-│   │		├── mutations.js
-│   │		├── state.js
-│   │		└── types.js
+│   │	├── action.js
+│   │	├── getters.js
+│   │	├── index.js
+│   │	├── mutations.js
+│   │	├── state.js
+│   │	└── types.js
 │   ├── json           // 推荐页面数据
-│   │		└── recommend.json
+│   │	└── recommend.json
 │   ├── App.vue        
 │   └── main.js        // Webpack 预编译入口
 </pre>
