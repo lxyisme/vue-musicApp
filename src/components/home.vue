@@ -11,7 +11,7 @@
                 </a>
             </li>
         </ul>
-        <a href="javascript:;" class="goToSeniority">底下没有啦，快去排行榜看看吧></a>
+        <router-link to="/raking" tag="a" class="goToSeniority" >底下没有啦，快去排行榜看看吧</router-link>
     </div>
 </template>
 <script>

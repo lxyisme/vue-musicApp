@@ -67,7 +67,6 @@
                 let scrH =0;
                 for (let i=0;i<nowLyc.length;i++){
                     scrH+=nowLyc[i].offsetHeight;
-                    console.log(i)
                 }
                 jquery('.lycBox').scrollTop(scrH);
             },100);
@@ -125,7 +124,7 @@
             },
             time(){
                 if (this.lyric[this.time]){
-                    let nowLyc= document.getElementsByClassName('nowLyc')
+                    let nowLyc= document.getElementsByClassName('nowLyc');
                     let scrH =0;
                     for (let i=0;i<nowLyc.length;i++){
                         scrH+=nowLyc[i].offsetHeight;
@@ -172,6 +171,7 @@
     }
     .lyc{
         position: relative;
+        transition: .2s all;
     }
     .lyc .nowLyc{
         color: #00e09e;

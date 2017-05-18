@@ -16,6 +16,7 @@
                 swiperOption: {//配置轮播图（参数和swiper的一样）
                     notNextTick: true,
                     autoplay: 3000,
+                    loop:true,
                     autoplayDisableOnInteraction:false,
                     direction : 'horizontal',
                     grabCursor : true,

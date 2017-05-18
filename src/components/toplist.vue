@@ -162,7 +162,8 @@
     }
     .topListInfo p b,.topListInfo p span{
         display: block;
-        margin-top: .5rem;
+        height:4vh;
+        line-height: 4vh;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
