@@ -40,7 +40,7 @@ npm run build
 </pre>
 ### 目录结构
 <pre>
-.
+
 ├── README.md           
 ├── config             // 项目不同环境的配置
 ├── index.html         // 项目入口文件
@@ -48,32 +48,55 @@ npm run build
 ├── package.json       // 项目配置文件
 ├── src                // 生产目录
 │   ├── assets         // css js 和图片资源
+│   │	├── css
+│   │	├── iconfont
+│   │	├── img
+│   │	└── js
 │   ├── components     // 各种组件
+│   │	├── loading
+│   │	├── carousel.vue
+│   │	├── header.vue
+│   │	├── home.vue
+│   │	├── musicList.vue
+│   │	├── navBar.vue
+│   │	├── playInfo.vue
+│   │	├── playBar.vue
+│   │	├── raking.vue
+│   │	├── search.vue
+│   │	└── toplist.vue
 │   ├── store          // vuex状态管理器
+│   │	├── action.js
+│   │	├── getters.js
+│   │	├── index.js
+│   │	├── mutations.js
+│   │	├── state.js
+│   │	└── types.js
 │   ├── json           // 推荐页面数据
+│   │	└── recommend.json
 │   ├── App.vue        
 │   └── main.js        // Webpack 预编译入口
 </pre>
 
 
 ### 已实现功能：
-<pre>
-   音乐播放
-   自动播放下一曲
-   音乐列表（增删）
-   下一曲
-   排行榜
-   排行榜详情页
-   搜索
-   loading
-   播放详情页
-   滚动歌词
-   展示音乐进度
-   音乐进度的拖拽
-</pre>
+
+- [x]   音乐播放
+- [x]   自动播放下一曲
+- [x]   音乐列表（增删）
+- [x]   下一曲
+- [x]   排行榜
+- [x]   排行榜详情页
+- [x]   搜索
+- [x]   loading
+- [x]   播放详情页
+- [x]   滚动歌词
+- [x]   展示音乐进度
+- [x]   音乐进度的拖拽
+
+### 存在的Bug：
+- [ ]   进度条拖拽后歌词位置不能及时定位
+- [ ]   点开歌曲详情页歌词位置不执行定位
+
 ---
-### 待实现功能：
-<pre>
-   侧边栏
-   登陆，注册
-</pre>   
+#### 欢迎技术交流，xiaoyuliu.webdeveloper@gmail.com
+#### 微信：13216210763（欢迎“骚扰”）

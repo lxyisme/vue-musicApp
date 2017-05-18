@@ -1,14 +1,14 @@
 我整理了一下本应用用到的QQ音乐api供大家参考（api的各个参数我没有明确列出来，探索才是最刺激的 哈哈哈）
-
+ 
 搜索歌曲：(请求方式jsonp)
-    url:https://c.y.qq.com/soso/fcgi-bin/search_for_qq_cp?format=jsonp&n=20&w="+关键字+""
-    jsonp:jsonpCallback
-
-排行榜：(请求方式jsonp)
-    url:https://c.y.qq.com/v8/fcg-bin/fcg_myqq_toplist.fcg?
+    url:https://c.y.qq.com/soso/fcgi-bin/search_for_qq_cp?format=jsonp&n=20&w="+关键字+"" 
+    jsonp:jsonpCallback 
+     
+排行榜：(请求方式jsonp) 
+    url:https://c.y.qq.com/v8/fcg-bin/fcg_myqq_toplist.fcg? 
     format:jsonp
     g_tk:5381
-    uin=0
+    uin=0 
     format:jsonp
     inCharset:utf-8
     outCharset:utf-8
@@ -26,7 +26,7 @@
     format=json
     inCharset=utf-8
     outCharset=utf-8&notice=
-    platform=h5
+    platform=h5 
     needNewCode=1
     tpl=3
     page=detail
@@ -46,9 +46,7 @@
 
 歌曲地址：(id为获取到的音乐id)
    http://ws.stream.qqmusic.qq.com/"+id+".m4a?fromtag=46
+ 
 
-
-
-
-不要问我为什么没有把每个参数列详细，对！我就是懒
+不要问我为什么没有把每个参数列详细，对！我就是懒！ 
 
