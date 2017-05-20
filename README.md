@@ -13,6 +13,8 @@
 ### 在线预览
 在线预览地址： [Vue音乐播放器](https://lxyisme.github.io) (PC端请在浏览器的移动端模式下查看)
 
+![移动端二维码](https://github.com/lxyisme/vue-musicApp/blob/master/preview/1494160244.png)
+
 ### 预览图
 ![Vue音乐播放器](https://github.com/921227965/vue-musicApp/blob/master/preview/preview.gif?raw=true)
 
